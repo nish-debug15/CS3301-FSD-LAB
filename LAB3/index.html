@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="main-heading">Interactive DOM Lab</h1>
+        <button id="theme-btn">Toggle Dark Mode</button>
+        
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Type a new task...">
+            <p>You are typing: <span id="real-time-feedback"></span></p>
+            <small>(Press <strong>Enter</strong> to add to the list)</small>
+        </div>
+
+        <div class="list-section">
+            <h2>My Task List</h2>
+            <p class="instruction">Click on a task to remove it.</p>
+            <ul id="task-list">
+                <li>Sample Task 1</li>
+                <li>Sample Task 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

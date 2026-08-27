@@ -1,0 +1,111 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Class */
+body.dark-mode {
+    background-color: #222;
+    color: #f4f4f9;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .container {
+    background: #333;
+    color: #f4f4f9;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.input-section, .list-section {
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+body.dark-mode input[type="text"] {
+    background-color: #444;
+    color: #fff;
+    border-color: #555;
+}
+
+#real-time-feedback {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.instruction {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: #ecf0f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode li {
+    background-color: #444;
+}
+
+li:hover {
+    background-color: #e74c3c;
+    color: white;
+}
