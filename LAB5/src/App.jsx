@@ -3,26 +3,27 @@ import ProfileCard from './components/ProfileCard';
 import './App.css';
 
 function App() {
-  // Array of data to pass as props to our components
   const teamMembers = [
-    { id: 1, name: "Alice Johnson", role: "Frontend Developer", initialLikes: 0 },
-    { id: 2, name: "Bob Smith", role: "Backend Developer", initialLikes: 5 },
-    { id: 3, name: "Charlie Davis", role: "UI/UX Designer", initialLikes: 2 },
+    { id: 1, name: "Alice Johnson", role: "Frontend Developer", initialLikes: 12, imageUrl: "https://i.pravatar.cc/150?img=1" },
+    { id: 2, name: "Bob Smith", role: "Backend Developer", initialLikes: 5, imageUrl: "https://i.pravatar.cc/150?img=11" },
+    { id: 3, name: "Charlie Davis", role: "UI/UX Designer", initialLikes: 24, imageUrl: "https://i.pravatar.cc/150?img=33" },
   ];
 
   return (
     <div className="app-container">
-      <h1>Team Profile Gallery</h1>
-      <p className="subtitle">Built with React Components, Props, and State</p>
+      <header className="hero-header">
+        <h1>Team Profile Gallery</h1>
+        <p className="subtitle">Built with React Components, Props, and State</p>
+      </header>
       
       <div className="gallery">
-        {/* We map over the array and reuse the ProfileCard component, passing data via props */}
         {teamMembers.map(member => (
           <ProfileCard 
             key={member.id} 
             name={member.name} 
             role={member.role} 
-            initialLikes={member.initialLikes} 
+            initialLikes={member.initialLikes}
+            imageUrl={member.imageUrl}
           />
         ))}
       </div>
